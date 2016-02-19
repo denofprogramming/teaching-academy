@@ -24,8 +24,8 @@
 					<warName>academy-web</warName>
 				</configuration>
 			</plugin>
-		</plugins>
-	</build>
+		</plugins>		
+	</build>	
 
 	<dependencies>
 		<dependency>

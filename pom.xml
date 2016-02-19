@@ -77,11 +77,11 @@
 			<url>http://localhost:8081/nexus/content/repositories/releases</url>
 		</repository>
 		<snapshotRepository>
-			<id>nexus-releases</id>
+			<id>nexus-snapshots</id>
 			<url>http://localhost:8081/nexus/content/repositories/snapshot</url>
 		</snapshotRepository>		
 		<site>
-			<id>nexus-releases</id>
+			<id>nexus-sites</id>
 			<url>dav:http://localhost:8081/nexus/content/sites/academySite/</url>
 		</site>
 		<!-- <site> <id>apache</id> <url>dav:http://127.0.0.1/sites/</url> </site> -->
