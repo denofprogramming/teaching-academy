@@ -74,11 +74,11 @@
 	<distributionManagement>
 		<repository>
 			<id>nexus-releases</id>
-			<url>http://localhost:8081/nexus/content/repositories/releases</url>
+			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
-			<url>http://localhost:8081/nexus/content/repositories/snapshot</url>
+			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>			
 		</snapshotRepository>		
 		<site>
 			<id>nexus-sites</id>
