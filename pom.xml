@@ -72,28 +72,11 @@
 	</properties>
 
 	<distributionManagement>
-		<repository>
-			<id>nexus-releases</id>
-			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
-		</repository>
 		<snapshotRepository>
 			<id>nexus-snapshots</id>
 			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>			
 		</snapshotRepository>		
-		<site>
-			<id>nexus-sites</id>
-			<url>dav:http://localhost:8081/nexus/content/sites/academySite/</url>
-		</site>
-		<!-- <site> <id>apache</id> <url>dav:http://127.0.0.1/sites/</url> </site> -->
 	</distributionManagement>
-
-	<scm>
-		<connection>scm:git:git@github.com:denofprogramming/teaching-academy.git</connection>
-		<url>scm:git:git@github.com:denofprogramming/teaching-academy.git</url>
-		<developerConnection>scm:git:git@github.com:denofprogramming/teaching-academy.git</developerConnection>
-		<tag>HEAD</tag>
-	</scm>
-
 
 	<build>
 		<pluginManagement>
@@ -127,19 +110,8 @@
 						</dependency>
 					</dependencies>
 				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.5.3</version>
-					<configuration>
-						<tagNameFormat>v@{project.version}</tagNameFormat>
-						<autoVersionSubmodules>true</autoVersionSubmodules>
-					</configuration>
-				</plugin>
 			</plugins>
 		</pluginManagement>
-
-
 	</build>
 	<reporting>
 		<plugins>
